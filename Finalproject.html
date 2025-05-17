@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+    body, html {
+    height:100%;
+    }
+    body {
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    min-height:100%;
+    }
+    .divnav {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    }
+    .divmain1 {
+    background-color:white;
+    height:500px;
+    width:100%;
+    }
+    .divmain2 {
+    background-color:white;
+    height:500px;
+    width:100%;
+    }
+    .divmain3 {
+    background-color:white;
+    height:500px;
+    width:100%;
+    }
+    .logo {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:20px;
+    width:20px;
+    }
+    .logo2 {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:50px;
+    width:50px;
+    position:relative;
+    left:100px;
+    bottom:20px;
+    }
+    .subdivnav1 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav2 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav3 {
+    border-radius:50px;
+    height:20px;
+    width:20px;
+    background-color:white;
+    border-style:groove;
+    border-width:1.5px;
+    border-color:black;
+    position:relative;
+    right:23px;
+    }
+    .navp1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:2px;
+    left: 10px;
+    font-size:8px;
+    white-space:nowrap;
+    }
+    .nava1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:-6px;
+    left:10px;
+    color:white;
+    font-size:8px;
+    text-decoration:none;
+    }
+    .nava2 {
+    display:inline;
+    position:relative;
+    bottom:3px;
+    color:black;
+    font-weight:bold;
+    font-size:7px;
+    text-decoration:none;
+    }
+    .buttonnav {
+    border-radius:20px;
+    width:60px;
+    height:20px;
+    background-color:white;
+    position:relative;
+    right:20px;
+    top:1px;
+    }
+    .img1 {
+    height:10px;
+    position:relative;
+    left:5px;
+    bottom:1px;
+    }
+    .img2 {
+    height:300px;
+    position:relative;
+    left:450px;
+    bottom:10px;
+    }
+    .subdivmain1 {
+    height:50px;
+    }
+    .subdivmain2 {
+    height:20px;
+    }
+    .mainp1 {
+    position:relative;
+    display:inline;
+    top:100px;
+    left:50px;
+    text-transform:capitalize;
+    font-size:25px;
+     }
+    .mainp2 {
+    position:relative;
+    display:inline;
+    top:115px;
+    left:50px;
+    font-size:15px;
+    }
+    .main2p1 {
+    position:relative;
+    left:320px;
+    top:50px;
+    font-size:20px;
+    }
+    .main3p1 {
+    position:relative;
+    display:inline;
+    top:100px;
+    left:380px;
+    text-transform:capitalize;
+    font-size:20px;
+     }
+     .stats {
+    font-size:20px;
+    left:375px;
+    top:140px;
+    position:relative;
+     }
+     .divstat{
+    background-color:dimgray;
+    width:450px;
+    height:175px;
+    position:relative;
+    top:125px;
+    left:175px;
+    color:white;
+     }
+     .wrap {
+    flex:1;
+     }
+     .footer {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position:relative;
+    top:200px;
+    flex-shrink:0;
+    }
+    .footerp1 {
+    font-size:5px;
+    margin-bottom:-80px;
+    margin-left:3px;
+    }
+    .footerp2 {
+    font-size:9px;
+    position:relative;
+    bottom:-7px;
+    right:69px;
+    }
+    .footerp3 {
+    font-size:9px;
+    position:relative;
+    bottom:-10px;
+    right:69px;
+    }
+    .footersubdiv1 {
+    margin-left:200px;
+    }
+    .footersubdiv2 {
+    margin-left:50px;
+    margin-bottom:8px;
+    }
+    .footersubdiv3 {
+    margin-left:50px;
+    margin-bottom:10px;
+    }
+    .footerbutton {
+    height:30px;
+    width:70px;
+    position:relative;
+    top:30px;
+    right:60px;
+    text-transform:uppercase;
+    color:black;
+    font-size:7px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    .footerli {
+    list-style:none;
+    font-size:7px;
+    position:relative;
+    right:108px;
+    top:-5px;
+    }
+    .hr1 {
+    width:100px;
+    position:relative;
+    right:85px;
+    }
+    .table1{
+    position:relative;
+    top:50px;
+    left:100px;
+    font-size:10px;
+    border-collapse: collapse;
+    border-color:black;
+    }
+    .table2 {
+    position:relative;
+    top:110px;
+    left:200px;
+    font-size:10px;
+    border-collapse: collapse;
+    border-color:black;
+    }
+    .table3 {
+    position:relative;
+    top:10px;
+    left:0px;
+    }
+    .table2 td{
+    width:100px;
+    border-color:black;
+    }
+    .table1 td {
+    width:150px;
+    border-color:black;
+    }
+    .table1 tr:nth-child(2) {
+    background-color:cyan;
+    }
+    .table1 tr:nth-child(3) {
+    background-color:dodgerblue;
+    }
+    .table1 tr:nth-child(4) {
+    background-color:blue;
+    color:white;
+    }
+    .table1 tr:nth-child(5) {
+    background-color:fuchsia;
+    color:white;
+    }
+    .table1 tr:nth-child(6) {
+    background-color:black;
+    color:white;
+    }
+    .table1 tr:nth-child(7) {
+    background-color:darkred;
+    color:white;
+    }
+    .table1 tr:nth-child(8) {
+    background-color:red;
+    color:white;
+    }
+    .table1 tr:nth-child(9) {
+    background-color:orange;
+    }
+    .table1 tr:nth-child(10) {
+    background-color:yellow;
+    }
+    .table1 tr:nth-child(11) {
+    background-color:lime;
+    }
+    .table2 tr:nth-child(2) {
+    background-color: grey;
+    color:white;
+    }
+    .table2 tr:nth-child(3) {
+    background-color:indigo;
+    color:white;
+    }
+    .table2 tr:nth-child(4) {
+    background-color:rgb(150, 145, 255);
+    color:white;
+    }
+    .table2 tr:nth-child(1) {
+    background-color:black;
+    color:white;
+    }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<div class="divnav"><div class="logo"></div>
+ <div class="subdivnav1">
+<a href="Finalproject.html" class="nava1">Home</a>
+<p class="navp1">About</p>
+<a href="idksection.html" class="nava1">Info</a>
+<p class="navp1">More Info</p>
+</div>
+<div class="subdivnav2">
+    <div class="subdivnav3">
+    <img class="img1"src="user.png" alt="user">
+    </div>
+    <button class="buttonnav">
+        <a href="loginsection.html" class="nava2">Login</a>
+        </button>
+    </div>
+</div>
+<div class="divmain1">
+    <div class="subdivmain1">
+    <div class="subdivmain2">
+        <p class="mainp1">Embracing Discipline & Difficulty</p>
+    </div>
+    <div class="subdivmain3">
+        <p class="mainp2">Every single SC or Tiered Obby completion from me</p>
+    </div>
+    <div class="subdivmain1b">
+    <img src="https://www.speedrun.com/static/game/v1pozgp6/cover.png?v=b3f6e99" alt="etoh" class="img2">
+    </div>
+<div class="divmain2">
+    <p class="main2p1">Hardest Completions</p>
+    <table border class="table1">
+    <tr>
+    <td>No.</td>
+    <td>Obbies</td>
+    <td>Difficulty/Tiers</td>
+    <td>Completion Date</td>
+    </tr>
+    <tr>
+    <td>1.</td>
+    <td>Tartarus</td>
+    <td>Tier 15</td>
+    <td>16/03/2025</td>
+    </tr>
+    <tr>
+    <td>2.</td>
+    <td>ToCL(AToS)</td>
+    <td>Catastrophic(11.00)</td>
+    <td>02/02/2025</td>
+    </tr>
+    <tr>
+    <td>3.</td>
+    <td>Lemon Juice</td>
+    <td>Tier 14</td>
+    <td>25/02/2025</td>
+    </tr>
+    <tr>
+    <td>4.</td>
+    <td>ToIM(EToH)</td>
+    <td>Terrifying(10.05)</td>
+    <td>20/07/2024</td>
+    </tr>
+    <tr>
+    <td>5.</td>
+    <td>Firework</td>
+    <td>Tier 13</td>
+    <td>22/02/2025</td>
+    </tr>
+    <tr>
+    <td>6.</td>
+    <td>ToHH(EToH)</td>
+    <td>Extreme(9.5)</td>
+    <td>06/05/2024</td>
+    </tr>
+    <td>7.</td>
+    <td>NEaHH(TNP)</td>
+    <td>Extreme(9.5)</td>
+    <td>04/06/2024</td>
+    </tr>
+    <tr>
+    <td>8.</td>
+    <td>ToTL(EToH)</td>
+    <td>Insane(8.48)</td>
+    <td>05/11/2023</td>
+    </tr>
+    <tr>
+    <td>9.</td>
+    <td>NEaTL(TNP)</td>
+    <td>Insane(8.48)</td>
+    <td>09/11/2023</td>
+    </tr>
+    <tr>
+    <td>10.</td>
+    <td>ToDC(EToH)</td>
+    <td>Insane(8.06)</td>
+    <td>23/09/2023</td>
+    </tr>
+    </table>
+<div class="divmain3">
+    <p class="main3p1">Goals</p>
+    <table border class="table2">
+        <tr>
+        <td>No.</td>
+        <td>Obbies</td>
+        <td>Difficulty/Tiers</td>
+        <td>Progress</td>
+        </tr>
+        <tr>
+        <td>1.</td>
+        <td>ToCR(EToH)</td>
+        <td>Catastrophic(11.71)</td>
+        <td>~30%</td>
+        </tr>
+        <tr>
+        <td>2.</td>
+        <td>MIKU(EToH)</td>
+        <td>Terrifying(10.9)</td>
+        <td>~30%</td>
+        </tr>
+        <tr>
+        <td>3.</td>
+        <td>ToVH(EToH)</td>
+        <td>Horrific(12.00)</td>
+        <td>~1%</td>
+        </tr>
+        </table>
+<div><p class="stats">Profile</p>
+    <div class="divstat">
+    <table class="table3">
+        <tr>
+        <td>Name</td>
+        <td>:</td>
+        <td>HeloOimM</td>
+        </tr>
+        <tr>
+            <td>Obby Experience</td>
+            <td>:</td>
+            <td>~ 2.08 years</td>
+            </tr>
+        <tr>
+         <td>Towers Beaten</td>
+         <td>:</td>
+        <td>103</td>
+        </tr>
+        <tr>
+        <td>Tiered Obbies Beaten</td>
+        <td>:</td>
+        <td>5</td>
+        </tr>
+        <tr>
+        <td>Hardest Tower</td>
+        <td>:</td>
+        <td>ToCL(Catastrophic)</td>
+        </tr>
+        <tr>
+        <td>Hardest Tiered Obby</td>
+        <td>:</td>
+        <td>Tartarus(Tier 15)</td>
+        </tr>
+        <td>Favorite Obby</td>
+        <td>:</td>
+        <td>ETTTT(Difficult)</td>
+        </tr>
+    </table>
+    </div>
+</div>
+    <div class="footer">
+    <p class="footerp1">©2025 HeloOimM. All rights reserved</p>
+    <div class="footersubdiv1"><p class="footerp2">Games</p>
+    <hr class="hr1">
+    <ul class="footerli">
+    <li>EToH</li>
+    <li>Tiered Obbies</li>
+    <li>Difficulty Chart Obbies</li>
+    <li>Find The Games</li>
+    <li>DOORS</li>
+    <ul></div>
+        <div class="footersubdiv2"><p class="footerp2">Contacts</p>
+            <hr class="hr1">
+            <ul class="footerli">
+            <li>Whatsapp</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>Tiktok</li>
+            <ul></div>
+                <div class="footersubdiv3"><p class="footerp3">Work With Us
+                <button class="footerbutton">FREE QUOTE!</button>
+        <div class="logo2"></div>
+    </div>
+</body>
+</html>

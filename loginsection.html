@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body {
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    }
+    .divnav {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    }
+    .logo {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:20px;
+    width:20px;
+    }
+    .logo2 {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:50px;
+    width:50px;
+    position:relative;
+    left:100px;
+    bottom:20px;
+    }
+    .subdivnav1 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav2 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav3 {
+    border-radius:50px;
+    height:20px;
+    width:20px;
+    background-color:white;
+    border-style:groove;
+    border-width:1.5px;
+    border-color:black;
+    position:relative;
+    right:23px;
+    }
+    .navp1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:2px;
+    left: 10px;
+    font-size:8px;
+    white-space:nowrap;
+    }
+    .nava1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:-6px;
+    left:10px;
+    color:white;
+    font-size:8px;
+    text-decoration:none;
+    }
+    .nava2 {
+    display:inline;
+    position:relative;
+    bottom:3px;
+    color:black;
+    font-weight:bold;
+    font-size:7px;
+    text-decoration:none;
+    }
+    .buttonnav {
+    border-radius:20px;
+    width:60px;
+    height:20px;
+    background-color:white;
+    position:relative;
+    right:20px;
+    top:1px;
+    }
+    .img1 {
+    height:10px;
+    position:relative;
+    left:5px;
+    bottom:1px;
+    }
+    .footer {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position:relative;
+    top:0px;
+    flex-shrink:0;
+    }
+    .footerp1 {
+    font-size:5px;
+    margin-bottom:-80px;
+    margin-left:3px;
+    }
+    .footerp2 {
+    font-size:9px;
+    position:relative;
+    bottom:-7px;
+    right:69px;
+    }
+    .footerp3 {
+    font-size:9px;
+    position:relative;
+    bottom:-10px;
+    right:69px;
+    }
+    .footersubdiv1 {
+    margin-left:200px;
+    }
+    .footersubdiv2 {
+    margin-left:50px;
+    margin-bottom:8px;
+    }
+    .footersubdiv3 {
+    margin-left:50px;
+    margin-bottom:10px;
+    }
+    .footerbutton {
+    height:30px;
+    width:70px;
+    position:relative;
+    top:30px;
+    right:60px;
+    text-transform:uppercase;
+    color:black;
+    font-size:7px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    .footerli {
+    list-style:none;
+    font-size:7px;
+    position:relative;
+    right:108px;
+    top:-5px;
+    }
+    .hr1 {
+    width:100px;
+    position:relative;
+    right:85px;
+    }
+    .login {
+    height:500px;
+    width:calc(100% + 15px);
+    background:url(https://www.speedrun.com/static/game/v1pozgp6/cover.png?v=b3f6e99) no-repeat scroll;
+    background-size:cover;
+    opacity:70%;
+    margin-top:-20px;
+    }
+    .loginsub {
+    background-color:dimgray;
+    width:50%;
+    height:50%;
+    left:25%;
+    position:relative;
+    top:50px;
+    color:white;
+    opacity:100%;
+    }
+    .title {
+    font-size:20px;
+    margin-left:42%;
+    position:relative;
+    top:10px;
+    }
+    .label1 {
+    margin-left:10px;
+    font-size:13px;
+    }
+    .email1 {
+    margin-left:10px;
+    width:90%;
+    border-image:linear-gradient(90deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white) 1;
+    }
+    .email1:focus {
+        border-image:linear-gradient(90deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white) 10px;
+        background-color:black;
+        color:white;
+    }
+    .email1::placeholder {
+    font-size:10px;
+    position:relative;
+    bottom:1px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    .button1 {
+    margin-left:41%;
+    margin-top:30px;
+    height:35px;
+    width:70px;
+    font-family:'Times New Roman', Times, serif;
+    border-image:linear-gradient(90deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white) 1;
+    ;
+    background-image:linear-gradient(90deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    color:white;
+    }
+    .button1:focus {
+    border-image:linear-gradient(90deg, rgb(150, 145, 255), indigo, grey ) 1;
+    background-color:black;
+    background-image:none;
+    }
+    .remember {
+    font-size:10px;
+    position:relative;
+    top:12px;
+    }
+    .check {
+    position:relative;
+    left:5px;
+    top:15px
+    }
+    .forgot {
+    font-size:10px;
+    display:inline;
+    text-decoration:underline;
+    position:relative;
+    top:12px;
+    left:55%;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="divnav"><div class="logo"></div>
+         <div class="subdivnav1">
+        <a href="Finalproject.html" class="nava1">Home</a>
+        <p class="navp1">About</p>
+        <a href="idksection.html" class="nava1">Info</a>
+        <p class="navp1">More Info</p>
+        </div>
+        <div class="subdivnav2">
+            <div class="subdivnav3">
+            <img class="img1"src="user.png" alt="user">
+            </div>
+            <button class="buttonnav">
+                <a href="loginsection.html" class="nava2">Login</a>
+                </button>
+            </div>
+        </div>
+    <div class="login">
+        <div class="loginsub">
+        <p class="title">LOGIN</p>
+        <label for="email" class="label1">Email:</label>
+        <br>
+        <input type="email" name="" id="email" class="email1" placeholder="Enter Your Email" required>
+        <br>
+        <label for="password" class="label1">Password:</label>
+        <br>
+        <input type="password" name="" id="password" class="email1" placeholder="Enter Your Email" required>
+        <br>
+        <input type="checkbox" name="" id="check" class="check">
+        <label for="check" class="remember">Remember me</label>
+        <p class="forgot">Forgot Password?</p>
+        <br>
+        <button class="button1"type="submit">Login</button>
+        </div>
+    </div>
+    </div>
+        <div class="footer">
+            <p class="footerp1">©2025 HeloOimM. All rights reserved</p>
+            <div class="footersubdiv1"><p class="footerp2">Games</p>
+            <hr class="hr1">
+            <ul class="footerli">
+            <li>EToH</li>
+            <li>Tiered Obbies</li>
+            <li>Difficulty Chart Obbies</li>
+            <li>Find The Games</li>
+            <li>DOORS</li>
+            <ul></div>
+                <div class="footersubdiv2"><p class="footerp2">Contacts</p>
+                    <hr class="hr1">
+                    <ul class="footerli">
+                    <li>Whatsapp</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Tiktok</li>
+                    <ul></div>
+                        <div class="footersubdiv3"><p class="footerp3">Work With Us
+                        <button class="footerbutton">FREE QUOTE!</button>
+                <div class="logo2"></div>
+            </div>  
+</body>
+</html>

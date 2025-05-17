@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+    body {
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    }
+    .divnav {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    }
+    .logo {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:20px;
+    width:20px;
+    }
+    .logo2 {
+    border-radius:50px;
+    margin-left:10px;
+    background-image:linear-gradient(360deg, yellowgreen, yellow, orange, red, darkred, black, fuchsia, blue, dodgerblue, cyan, white);
+    height:50px;
+    width:50px;
+    position:relative;
+    left:100px;
+    bottom:20px;
+    }
+    .subdivnav1 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav2 {
+    margin-left:250px;
+    display:flex;
+    }
+    .subdivnav3 {
+    border-radius:50px;
+    height:20px;
+    width:20px;
+    background-color:white;
+    border-style:groove;
+    border-width:1.5px;
+    border-color:black;
+    position:relative;
+    right:23px;
+    }
+    .navp1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:2px;
+    left: 10px;
+    font-size:8px;
+    white-space:nowrap;
+    }
+    .nava1 {
+    margin-left:20px;
+    display:inline;
+    position:relative;
+    bottom:-6px;
+    left:10px;
+    color:white;
+    font-size:8px;
+    text-decoration:none;
+    }
+    .nava2 {
+    display:inline;
+    position:relative;
+    bottom:3px;
+    color:black;
+    font-weight:bold;
+    font-size:7px;
+    text-decoration:none;
+    }
+    .buttonnav {
+    border-radius:20px;
+    width:60px;
+    height:20px;
+    background-color:white;
+    position:relative;
+    right:20px;
+    top:1px;
+    }
+    .img1 {
+    height:10px;
+    position:relative;
+    left:5px;
+    bottom:1px;
+    }
+    .footer {
+    background-color: dimgray;
+    color: white;
+    width: 100%;                 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position:relative;
+    top:0px;
+    flex-shrink:0;
+    }
+    .footerp1 {
+    font-size:5px;
+    margin-bottom:-80px;
+    margin-left:3px;
+    }
+    .footerp2 {
+    font-size:9px;
+    position:relative;
+    bottom:-7px;
+    right:69px;
+    }
+    .footerp3 {
+    font-size:9px;
+    position:relative;
+    bottom:-10px;
+    right:69px;
+    }
+    .footersubdiv1 {
+    margin-left:200px;
+    }
+    .footersubdiv2 {
+    margin-left:50px;
+    margin-bottom:8px;
+    }
+    .footersubdiv3 {
+    margin-left:50px;
+    margin-bottom:10px;
+    }
+    .footerbutton {
+    height:30px;
+    width:70px;
+    position:relative;
+    top:30px;
+    right:60px;
+    text-transform:uppercase;
+    color:black;
+    font-size:7px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    .footerli {
+    list-style:none;
+    font-size:7px;
+    position:relative;
+    right:108px;
+    top:-5px;
+    }
+    .hr1 {
+    width:100px;
+    position:relative;
+    right:85px;
+    }
+    .main {
+    height:300px;
+    display:flex;
+    }
+    .info {
+     margin-left:90px;
+    margin-top:50px;
+    }
+    .title {
+    font-size:25px;
+    }
+    .infop {
+    font-size:15px;
+    position:relative;
+    right:50px;
+    }
+    .picture {
+    position:relative;
+    display:inline;
+    }
+    .obbyimg {
+    height:180px;
+    position:relative;
+    top:100px;
+    right:20px;
+    }
+    .obbyimg2 {
+    height:170px;
+    position:relative;
+    top:0px;
+    right:0px;
+    }
+    .obbyimg3 {
+    height:170px;
+    position:relative;
+    top:0px;
+    right:0px;
+    }
+    .obbyimg4 {
+    width:300px;
+    position:relative;
+    top:0px;
+    right:20px;
+    }
+    .obbyimg5 {
+    width:300px;
+    position:relative;
+    top:35px;
+    left:20px;
+    }
+    .submain {
+    display:flex;
+    position:relative;
+    height:300px;
+    }
+    .title2 {
+    font-size:25px;
+    margin-left:350px;
+    width:100%;
+    display:block;
+    }
+    .title3 {
+    display:block;
+    font-size:25px;
+    }
+    .info2 {
+    margin-left:90px;
+    margin-bottom:50px;
+    }
+    .info4 {
+    margin-left:90px;
+    margin-bottom:50px;
+    position:relative;
+    bottom:60px;
+    }
+    .submain2 {
+    display:flex;
+    position:relative;
+    height:300px;
+    flex-direction:row-reverse;
+    }
+    .title4 {
+    display:block;
+    font-size:25px;
+    margin-left:70px;
+    }
+    .title5 {
+    display:block;
+    font-size:25px;
+    margin-left:110px;
+    }
+    .obbyimg3 {
+    height:170px;
+    position:relative;
+    top:0px;
+    left:27px;
+    }
+    .info3 {
+    position:relative;
+    left:20px;
+    margin-left:100px;
+    margin-bottom:50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="divnav"><div class="logo"></div>
+         <div class="subdivnav1">
+        <a href="Finalproject.html" class="nava1">Home</a>
+        <p class="navp1">About</p>
+        <a href="idksection.html" class="nava1">Info</a>
+        <p class="navp1">More Info</p>
+        </div>
+        <div class="subdivnav2">
+            <div class="subdivnav3">
+            <img class="img1"src="user.png" alt="user">
+            </div>
+            <button class="buttonnav">
+                <a href="loginsection.html" class="nava2">Login</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+    <div class="info">
+    <p class="title">What Are Obbies?</p> <p class="infop">In Roblox, obbies are <b>parkour courses</b> 
+    that uses the Roblox Physics.</p>
+    
+    <p class="infop">Obbies come in many difficulties ranging from effortless to humanly</p>
+    <p class="infop">impossible. Obbies also have different types that can affect gameplay</p>
+    <p class="infop">and obby difficulty.</p>
+    </div>
+    <div class="picture"><img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/1/1/5/1150b056badff99520ecba749d13b5ac48314e53.jpeg" alt="obby" class="obbyimg"></div>
+    </div>
+    <p class="title2">Obby Types</p>
+    <div class="submain">
+        <div class="info2"><p class="title3">Mega Fun Obby</p>
+        <p class="infop">The most well known and the easiest obby type. This type mainly</p>
+    <p class="infop">involves checkpoints with easy obstacles per stage. Usually, these</p>
+<p class="infop">obbies are very long and can have thousands of repetitive stages.</p></div><div class="picture"><img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/336d9bfb-bee0-4e07-a3a0-2b6fef1a6714/2451318979/mega-fun-obby-2715-stages-screenshot.png" alt="mega fun" class="obbyimg2"></div>
+    </div>
+    <div class="submain2">
+        <div class="info3"><p class="title4">Difficulty Chart Obby</p>
+        <p class="infop">This obby gets harder the more stages you progress. There are still</p>
+    <p class="infop">some checkpoints that can help you save your progress. Fun fact,</p>
+<p class="infop">this obby type was inspired from ToDC in EToH.</p></div><div class="picture"><img src="https://i.ytimg.com/vi/MvHz5shz7l8/maxresdefault.jpg" alt="mega fun" class="obbyimg3"></div>
+    </div>
+    <div class="submain">
+        <div class="info4"><p class="title3">Towers</p>
+        <p class="infop">Towers are structures that have obbies filled in. These Towers usually</p>
+    <p class="infop">don't have checkpoints, which means that you lose progress if you</p>
+<p class="infop">fall. Towers can be CO(Adds special blocks that aren't in the studio), </p>
+<p class="infop">Purist(Opposite of CO), and mixed gameplay. Towers also have</p>
+<p class="infop"> 14 difficulties ranging from easy to nil.</p></div><div class="picture"><img src="https://i.redd.it/oxp6uukf1gw51.png" alt="mega fun" class="obbyimg4"></div>
+    </div>
+    <div class="submain2">
+        <div class="info3"><p class="title5">Tiered Obbies</p>
+        <p class="infop">This obby only has 1 stage, but it is really hard. Tiered Obbies are </p>
+    <p class="infop">also purist and each difficulty is 2x harder than the previous</p>
+<p class="infop">difficulty. The difficulties range from tier 1 to tier 25, however</p>
+<p class="infop">the current human limit is tier 18.</p></div><div class="picture"><img src="https://i.ytimg.com/vi/XqyVV8Bsgto/maxresdefault.jpg" alt="mega fun" class="obbyimg5"></div>
+    </div>
+    <div class="footer">
+        <p class="footerp1">©2025 HeloOimM. All rights reserved</p>
+        <div class="footersubdiv1"><p class="footerp2">Games</p>
+        <hr class="hr1">
+        <ul class="footerli">
+        <li>EToH</li>
+        <li>Tiered Obbies</li>
+        <li>Difficulty Chart Obbies</li>
+        <li>Find The Games</li>
+        <li>DOORS</li>
+        <ul></div>
+            <div class="footersubdiv2"><p class="footerp2">Contacts</p>
+                <hr class="hr1">
+                <ul class="footerli">
+                <li>Whatsapp</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+                <li>Tiktok</li>
+                <ul></div>
+                    <div class="footersubdiv3"><p class="footerp3">Work With Us
+                    <button class="footerbutton">FREE QUOTE!</button>
+            <div class="logo2"></div>
+        </div>  
+</body>
+</html>
